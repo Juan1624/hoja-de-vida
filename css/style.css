@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contenedor {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lateral {
+  background-color: #1a1a1a;
+  color: white;
+  width: 35%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lateral img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid white;
+}
+
+.lateral h3 {
+  margin: 20px 0 10px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #444;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.lateral p, .lateral a {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #ccc;
+  text-align: center;
+}
+
+.lateral a {
+  text-decoration: none;
+}
+
+.lateral a:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  width: 65%;
+  padding: 30px 40px;
+}
+
+.principal h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.principal h2 {
+  font-size: 1.2rem;
+  color: #3a0ca3;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.principal p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.principal .subtitulo {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.habilidades, .idiomas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.habilidades li, .idiomas li {
+  background-color: #eee;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.btn-gracias {
+  background-color: transparent; /* Fondo transparente */
+  color: #666; /* Color del texto similar al fondo */
+  font-size: 1rem; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  border: 2px solid #ccc; /* Borde sutil */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: all 0.3s ease; /* Transición suave */
+  position: center; /* Centra el botón */
+}
+
+.btn-gracias:hover {
+  background-color: rgb(72, 72, 255); /* Fondo al pasar el cursor */
+  color: white; /* Cambia el color del texto */
+  border-color: rgb(72, 72, 255); /* Cambia el color del borde */
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .lateral, .principal {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .principal {
+    padding-top: 10px;
+  }
+}
